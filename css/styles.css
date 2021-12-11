@@ -39,3 +39,9 @@ body{
 .navbar-dark{
     background-color: #512DA8;
 }
+span{
+    padding-right: 2px;
+}
+i{
+    margin: 5px;
+}
