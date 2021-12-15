@@ -24,6 +24,9 @@
       href="node_modules/bootstrap-social/bootstrap-social.css"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <script id="__bs_script__">//<![CDATA[
+      document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.27.7'><\/script>".replace("HOST", location.hostname));
+  //]]></script>
   </head>
 
   <body>
@@ -535,23 +538,7 @@
         $('[data-toggle="tooltip"]').tooltip();
       });
     </script>
-    <script>
-      $(document).ready(function(){
-        $('#mycarousel').carousel({interval:1000});
-        $('#carouselButton').click(function(){
-          if($('#carouselButton').children('span').hasClass('fa-pause')){
-            $('#mycarousel').carousel('pause');
-            $('#carouselButton').children('span').removeClass('fa-pause')
-            $('#carouselButton').children('span').addClass('fa-play')
-          }else{
-            $('#mycarousel').carousel('cycle');
-            $('#carouselButton').children('span').removeClass('fa-play');
-            $('#carouselButton').children('span').addClass('fa-pause')
-
-          }
-          
-        });
-      });
-    </script>
+    <script src='js/scripts.js'></script>
   </body>
+  
 </html>
